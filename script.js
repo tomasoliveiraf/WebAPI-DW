@@ -50,12 +50,12 @@ function displayResults(items) {
         }
     };
 
-    // Ordena os itens com base na função de comparação
+    // Ordenar
     items.sort(compareFunction);
 
     items.forEach((item, index) => {
         const itemElement = document.createElement('div');
-        itemElement.setAttribute('data-index', index); // Adiciona o atributo data-index
+        itemElement.setAttribute('data-index', index);
 
         if (item.type === 'track') {
             itemElement.innerHTML = `
