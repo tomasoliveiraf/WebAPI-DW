@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB API | DW</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Spotify Search</h1>
-  <input type="text" id="searchInput" placeholder="Pesquisar...">
+    <h1>SPOTIFY SEARCH HD 3000</h1>
+    <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Pesquisar...">
+        <select id="searchType">
+            <option value="track">Músicas</option>
+            <option value="album">Álbuns</option>
+            <option value="artist">Artistas</option>
+        </select>
+        <select id="sortOrder">
+            <option value="alpha">Ordem Alfabética</option>
+            <option value="default">Ordem de popularidade</option>
+        </select>
+        <button onclick="search()">Pesquisar</button>
+    </div>
 
-  <select id="searchType">
-    <option value="track">Músicas</option>
-    <option value="album">Álbuns</option>
-    <option value="artist">Artistas</option>
-  </select>
+    <div id="results"></div>
 
-  <select id="sortOrder">
-    <option value="alpha">Ordem Alfabética</option>
-    <option value="default">Ordem de popularidade</option>
-</select>
-
-  <button onclick="search()">Pesquisar</button>
-
-  <div id="results"></div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

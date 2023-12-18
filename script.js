@@ -60,7 +60,7 @@ function displayResults(items) {
         if (item.type === 'track') {
             itemElement.innerHTML = `
                 <p><strong>${item.name}</strong> by ${item.artists.map(artist => artist.name).join(', ')}</p>
-                <p>Album: ${item.album.name}</p>
+                <p>Album: <strong>${item.album.name}</strong></p>
                 <img src="${item.album.images[0].url}" alt="Album Cover" style="width: 100px; height: 100px;">
             `;
         } else if (item.type === 'album') {

@@ -1,7 +1,90 @@
-*{
-    font-family: 'Courier New', Courier, monospace;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-.h1 {
-    text-align: center
+h1 {
+    text-align: center;
+    font-family: IBM Plex Mono Bold, sans-serif;
+    font-size: 300%;
+    margin-top: 2%;
+
+}
+
+p {
+    font-family: IBM Plex Mono, sans-serif;
+    font-size: 90%;
+}
+
+#searchContainer {
+    margin-top: 1%;
+    display: block;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#searchInput,
+#searchType,
+#sortOrder {
+    margin: 10px;
+    padding: 8px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#results {
+    margin-top: 2%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+}
+
+#results div {
+    transition: ease-in-out, 0.5s;
+    padding: 10px;
+    background-color: #4CAF50;
+    border-radius: 25px;
+    filter: drop-shadow(1px 1px 5px);
+}
+
+#results div:hover {
+    transition: ease-in-out, 0.5s;
+    background-color: #257d27;
+}
+
+#results p {
+    color: #f4f4f4;
+}
+
+#results img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+@font-face {
+    font-family: RubikMonoOneRegular;
+    src: url("../fonts/RubikMonoOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: IBM Plex Mono;
+    src: url("../fonts/IBMPlexMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: IBM Plex Mono Bold;
+    src: url("../fonts/IBMPlexMono-Bold.ttf");
 }
