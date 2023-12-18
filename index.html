@@ -6,7 +6,23 @@
     <title>WEB API | DW</title>
 </head>
 <body>
-    
+    <h1>Spotify API Demo</h1>
+  <input type="text" id="searchInput" placeholder="Digite o nome da música">
+
+  <select id="searchType">
+    <option value="track">Músicas</option>
+    <option value="album">Álbuns</option>
+    <option value="artist">Artistas</option>
+  </select>
+
+  <select id="sortOrder">
+    <option value="alpha">Ordem Alfabética</option>
+    <option value="default">Ordem de popularidade</option>
+</select>
+
+  <button onclick="search()">Pesquisar</button>
+
+  <div id="results"></div>
 </body>
 <script src="script.js"></script>
 </html>
