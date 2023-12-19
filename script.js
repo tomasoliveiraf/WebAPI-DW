@@ -46,7 +46,7 @@ function displayResults(items) {
             const nameB = b.name.toUpperCase();
             return nameA.localeCompare(nameB);
         } else if (sortOrder === 'default') {
-
+          //Ordena por popularidade
         }
     };
 
