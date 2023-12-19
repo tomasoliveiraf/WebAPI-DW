@@ -61,17 +61,17 @@ function displayResults(items) {
             itemElement.innerHTML = `
                 <p><strong>${item.name}</strong> by ${item.artists.map(artist => artist.name).join(', ')}</p>
                 <p>Album: <strong>${item.album.name}</strong></p>
-                <img src="${item.album.images[0].url}" alt="Album Cover" style="width: 100px; height: 100px;">
+                <img src="${item.album.images[0].url}" alt="Album Cover" style="width: 200px; height: 200px;">
             `;
         } else if (item.type === 'album') {
             itemElement.innerHTML = `
                 <p><strong>${item.name}</strong> by ${item.artists.map(artist => artist.name).join(', ')}</p>
-                <img src="${item.images[0].url}" alt="Album Cover" style="width: 100px; height: 100px;">
+                <img src="${item.images[0].url}" alt="Album Cover" style="width: 200px; height: 200px;">
             `;
         } else if (item.type === 'artist') {
             itemElement.innerHTML = `
                 <p><strong>${item.name}</strong></p>
-                <img src="${item.images[0].url}" alt="Artist Image" style="width: 100px; height: 100px;">
+                <img src="${item.images[0].url}" alt="Artist Image" style="width: 200px; height: 200px;">
             `;
         }
 
